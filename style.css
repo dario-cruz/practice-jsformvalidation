@@ -9,6 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5em;
 }
 
 a {
@@ -17,8 +18,28 @@ a {
     color: black;
 }
 
+div.site-title {
+    display: flex;
+    width: 12em;
+    justify-content: center;
+}
+div.site-title > h1.title {
+    font-family: 'Oxanium', cursive;
+    font-weight: 500;
+}
+
+div.nav-links {
+    display: flex;
+    width: 20em;
+    justify-content: space-around;
+}
+div.nav-links > a {
+    font-family: 'Oxanium', cursive;
+}
+
 div.heading > .heading-text {
     font-family: 'Julius Sans One', sans-serif;
+    user-select: none;
 }
 
 div.page-content {
@@ -46,15 +67,21 @@ div.page-content {
     "country zip"
     "pass passconf"
     "how how"
-    "detail detail";
+    "submit submit";
 }
 div.form-div > label {
     font-family: 'Julius Sans One', sans-serif;
+    user-select: none;
 }
 div.form-div > input, div.form-div > select {
     border: none;
+    border-radius: 0;
     background-color: whitesmoke;
     height: 2rem
+}
+
+div.form-div > input, div.form-div > select:focus {
+    border-radius: 0;
 }
 
 div.form-div {
