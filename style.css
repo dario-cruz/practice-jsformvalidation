@@ -176,3 +176,27 @@ div.submit > button:hover{
     color: black;
     outline: 1px solid black;
 }
+
+/* ------- Modal props --------- */
+div.modal {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease-in-out 0.5s;
+}
+div.congratz-container{
+    transition: opacity ease-in-out 0.5s;
+    height: 30em;
+    width: 25em;
+    background-color: white;
+    border: 2px solid black;
+}

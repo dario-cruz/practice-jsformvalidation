@@ -7,8 +7,8 @@ const serviceSelect = document.querySelector('#service-select')
 const inputCountry = document.querySelector('#country-input')
 const inputZip = document.querySelector('#zip-input')
 const inputPass = document.querySelector('#pass-input')
-const inputPassConf =document.querySelector('#pass-confirm')
-
+const inputPassConf = document.querySelector('#pass-confirm')
+const modalDiv = document.querySelector('div.modal')
 
 // Live check first and last name input and through error if pattern is not matched.
 inputFirstName.addEventListener('input', (e) => {
@@ -54,5 +54,5 @@ inputPassConf.addEventListener('input', (e) => {
 // Create event for when the user submits the correct information.
 formElement.addEventListener('submit', (e) => {
     e.preventDefault()
-    
+
 })
