@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,10 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+
+div.heading > .heading-text {
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 div.page-content {
@@ -43,6 +48,15 @@ div.page-content {
     "how how"
     "detail detail";
 }
+div.form-div > label {
+    font-family: 'Julius Sans One', sans-serif;
+}
+div.form-div > input, div.form-div > select {
+    border: none;
+    background-color: whitesmoke;
+    height: 2rem
+}
+
 div.form-div {
     height: 4em;
     display: flex;
