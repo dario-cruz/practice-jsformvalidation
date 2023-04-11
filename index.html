@@ -32,11 +32,11 @@
             <form id="page-form" action="">
                 <div class="first-name form-div">
                     <label for="fname-in">First Name</label>
-                    <input type="text" name="first-name" id="fname-input">
+                    <input type="text" name="first-name" id="fname-input" pattern="^[A-Za-z][A-Za-z\'\-,. ]{0,19}$">
                 </div>
                 <div class="last-name form-div">
                     <label for="lname-input">Last Name</label>
-                    <input type="text" name="last-name" id="lname-input">
+                    <input type="text" name="last-name" id="lname-input" pattern="^[A-Za-z][A-Za-z\'\-,. ]{0,19}$">
                 </div>
                 <div class="email form-div">
                     <label for="email-input">Email Address</label>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="zip form-div">
                     <label for="zip-input">Zip Code</label>
-                    <input type="text" name="zip-input" id="zip-input">
+                    <input type="text" name="zip-input" id="zip-input" pattern="^\d{5}$">
                 </div>
                 <div class="pass form-div">
                     <label for="pass-input">Password</label>
