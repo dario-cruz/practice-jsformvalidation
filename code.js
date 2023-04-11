@@ -55,4 +55,17 @@ inputPassConf.addEventListener('input', (e) => {
 formElement.addEventListener('submit', (e) => {
     e.preventDefault()
 
+    // Change the visibility of modal and content on successful submit.
+    modalDiv.classList.remove('hidden')
+    modalDiv.classList.add('visible')
+
+    // Reset all form elements. 
+    inputFirstName.value = ''
+    inputLastName.value = ''
+    inputEmail.value = ''
+    serviceSelect.value = ''
+    inputCountry.value = ''
+    inputZip.valaue = ''
+    inputPass.value = ''
+    inputPassConf.value = ''
 })

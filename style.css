@@ -180,8 +180,6 @@ div.submit > button:hover{
 /* ------- Modal props --------- */
 div.modal {
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -199,4 +197,15 @@ div.congratz-container{
     width: 25em;
     background-color: white;
     border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
