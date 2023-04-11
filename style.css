@@ -28,6 +28,8 @@ div.site-title {
     width: 16em;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    cursor: pointer;
 }
 div.site-title > h1.title {
     font-family: 'Oxanium', cursive;
@@ -101,6 +103,10 @@ div.form-div > input:focus, div.form-div > select:focus {
     box-sizing: border-box;
     outline: 2px solid black;
 }
+div.form-div > input:hover, div.form-div > select:hover {
+    transition: all ease-in-out 1s;
+    outline: 1px solid black;
+}
 
 div.form-div {
     height: 4em;
@@ -151,4 +157,15 @@ div.how {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+div.submit {
+    grid-area: submit;
+    justify-content: center;
+}
+div.submit > button {
+    background-color: black;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    width: 50em;
+    height: 3em;
 }
