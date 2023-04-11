@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     width: 90%;
     margin-left: auto;
@@ -168,4 +167,5 @@ div.submit > button {
     font-family: 'Julius Sans One', sans-serif;
     width: 50em;
     height: 3em;
+    cursor: pointer;
 }
