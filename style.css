@@ -77,11 +77,15 @@ div.form-div > input, div.form-div > select {
     border: none;
     border-radius: 0;
     background-color: whitesmoke;
-    height: 2rem
+    height: 2rem;
 }
-
-div.form-div > input, div.form-div > select:focus {
-    border-radius: 0;
+/* Make text typed into input centered. */
+div.form-div > input {
+    padding: 1em;
+}
+div.form-div > input:focus, div.form-div > select:focus {
+    box-sizing: border-box;
+    outline: 2px solid black;
 }
 
 div.form-div {
