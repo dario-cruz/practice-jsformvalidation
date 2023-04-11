@@ -69,3 +69,5 @@ formElement.addEventListener('submit', (e) => {
     inputPass.value = ''
     inputPassConf.value = ''
 })
+
+// One click of span element close the congratz modal.
