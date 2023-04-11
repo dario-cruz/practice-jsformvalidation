@@ -50,3 +50,9 @@ inputPassConf.addEventListener('input', (e) => {
         inputPassConf.setCustomValidity('')
     }
 })
+
+// Create event for when the user submits the correct information.
+formElement.addEventListener('submit', (e) => {
+    e.preventDefault()
+    
+})
