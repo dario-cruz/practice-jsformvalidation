@@ -162,10 +162,17 @@ div.submit {
     justify-content: center;
 }
 div.submit > button {
+    transition: ease-in all 1s;
     background-color: black;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
     width: 50em;
     height: 3em;
     cursor: pointer;
+}
+div.submit > button:hover{
+    transition: ease-in-out all .5s;
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
 }
