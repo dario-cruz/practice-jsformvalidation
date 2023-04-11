@@ -34,3 +34,19 @@ inputZip.addEventListener('input', (e) => {
         inputZip.setCustomValidity('')
     }
 })
+
+// Throw error if the password values do not maatch.
+inputPass.addEventListener('input', (e) => {
+    if (inputPass.value !== inputPassConf.value) {
+        inputPass.setCustomValidity('Passwords do not match!')
+    } else {
+        inputPass.setCustomValidity('')
+    }
+})
+inputPassConf.addEventListener('input', (e) => {
+    if(inputPassConf.value !== inputPass.value) {
+        inputPassConf.setCustomValidity('Passwords do not match!')
+    } else {
+        inputPassConf.setCustomValidity('')
+    }
+})
