@@ -6,10 +6,14 @@
 
 
 header {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5em;
+    border-bottom: .1px solid black;
 }
 
 a {
@@ -72,6 +76,7 @@ div.page-content {
 div.form-div > label {
     font-family: 'Julius Sans One', sans-serif;
     user-select: none;
+    padding-bottom: .2em;
 }
 div.form-div > input, div.form-div > select {
     border: none;
