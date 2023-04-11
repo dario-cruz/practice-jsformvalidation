@@ -33,20 +33,20 @@
             <form id="page-form" action="">
                 <div class="first-name form-div">
                     <label for="fname-in">First Name</label>
-                    <input type="text" name="first-name" id="fname-input" pattern="^[A-Za-z][A-Za-z\'\-,. ]{0,19}$">
+                    <input required type="text" name="first-name" id="fname-input" pattern="^[A-Za-z][A-Za-z'\\\-,. ]{0,19}$">
                 </div>
                 <div class="last-name form-div">
                     <label for="lname-input">Last Name</label>
-                    <input type="text" name="last-name" id="lname-input" pattern="^[A-Za-z][A-Za-z\'\-,. ]{0,19}$">
+                    <input required type="text" name="last-name" id="lname-input" pattern="^[A-Za-z][A-Za-z'\\\-,. ]{0,19}$">
                 </div>
                 <div class="email form-div">
                     <label for="email-input">Email Address</label>
-                    <input type="email" name="email" id="email-input">
+                    <input required type="email" name="email" id="email-input">
                 </div>
                 <div class="service form-div">
                     <label for="service-select">Service Needed</label>
-                    <select name="service-select" id="service-select">
-                        <option value="blank"></option>
+                    <select required name="service-select" id="service-select">
+                        <option value="">--Select an Option---</option>
                         <option value="Tech Support">Tech Support</option>
                         <option value="Hardware Install">Hardware Installation</option>
                         <option value="Network Rollout">Network Rollout</option>
@@ -54,24 +54,24 @@
                 </div>
                 <div class="country form-div">
                     <label for="country-input">Country</label>
-                    <input type="text" name="country-input" id="country-input">
+                    <input required type="text" name="country-input" id="country-input">
                 </div>
                 <div class="zip form-div">
                     <label for="zip-input">Zip Code</label>
-                    <input type="text" name="zip-input" id="zip-input" pattern="^\d{5}$">
+                    <input required type="text" name="zip-input" id="zip-input" pattern="^\d{5}$">
                 </div>
                 <div class="pass form-div">
                     <label for="pass-input">Password</label>
-                    <input type="password" name="pass-input" id="pass-input">
+                    <input required type="password" name="pass-input" id="pass-input">
                 </div>
                 <div class="passconf form-div">
                     <label for="pass-confirm">Confirm Password</label>
-                    <input type="password" name="pass-confirm" id="pass-confirm">
+                    <input required type="password" name="pass-confirm" id="pass-confirm">
                 </div>
                 <div class="how form-div">
                     <label for="how-info">How do you hear about us?</label>
-                    <select name="how-info" id="how-info">
-                        <option value="blank"></option>
+                    <select required name="how-info" id="how-info">
+                        <option value="">--Select an Option---</option>
                         <option value="LinkedIn">LinkedIn</option>
                         <option value="Indeed">Indeed</option>
                         <option value="Career_Builder">Career Builder</option>
