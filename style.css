@@ -18,18 +18,27 @@ header {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
     color: black;
 }
 
 div.site-title {
     display: flex;
-    width: 12em;
+    width: 16em;
     justify-content: center;
+    align-items: center;
 }
 div.site-title > h1.title {
     font-family: 'Oxanium', cursive;
     font-weight: 500;
+    text-transform: uppercase;
+}
+div.site-title > .icon {
+    margin-bottom: 3px;
+}
+ion-icon {
+    font-size: 30px;
 }
 
 div.nav-links {
