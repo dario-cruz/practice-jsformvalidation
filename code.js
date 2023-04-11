@@ -9,6 +9,7 @@ const inputZip = document.querySelector('#zip-input')
 const inputPass = document.querySelector('#pass-input')
 const inputPassConf = document.querySelector('#pass-confirm')
 const modalDiv = document.querySelector('div.modal')
+const spanClose = document.querySelector('span.close')
 
 // Live check first and last name input and through error if pattern is not matched.
 inputFirstName.addEventListener('input', (e) => {
@@ -65,9 +66,13 @@ formElement.addEventListener('submit', (e) => {
     inputEmail.value = ''
     serviceSelect.value = ''
     inputCountry.value = ''
-    inputZip.valaue = ''
+    inputZip.value = ''
     inputPass.value = ''
     inputPassConf.value = ''
 })
 
 // One click of span element close the congratz modal.
+spanClose.addEventListener('click', () => {
+    modalDiv.classList.remove('visible')
+    modalDiv.classList.add('hidden')
+})
